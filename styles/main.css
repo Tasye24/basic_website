@@ -74,6 +74,9 @@ footer li:hover {
     background: none;
     color: white;
 }
+footer li:hover .nom {
+    font-size: 1.25em;
+}
 
 article .content {
     display: flex;
@@ -88,8 +91,75 @@ article {
     border-top: .2em solid rgba(0, 0, 0, 0.555);
 }
 
+article > figure {
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+}
+main > aside {
+    padding: 0;
+    position: sticky;
+    top: 10px;
+    height: 100%;
+}
+main > aside ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+main > section {
+    padding: 1.5em;
+}
+
 footer > .logo {
     height: 64px;
     background: none;
     border-radius: 3em;
+}
+
+body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
+.container { width: 80%; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+
+.container > ul li {
+    
+}
+
+nav { 
+    background: #333; padding: 10px; text-align: center; 
+}
+nav > ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+nav > ul a:hover {
+    text-decoration: underline;
+}
+a:before {
+    content: "🔗 ";
+}
+nav a { 
+    color: white; margin: 0 15px; text-decoration: none; font-weight: bold; 
+}
+p { margin-bottom: 10px; }
+ul { list-style-type: square; margin-left: 20px; }
+.feature-section { margin-bottom: 20px;}
+
+
+figure > figcaption::before {
+    content: "Légende: ";
 }
