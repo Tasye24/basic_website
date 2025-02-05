@@ -10,6 +10,16 @@
 
         <title>Fonctionnalités du Projet Partie 1</title>
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Projet GLP 2025" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -33,56 +43,66 @@
             </ul>
         </nav>
         
-        <div class="container">
-            <h2>Fonctionnalités attendues</h2>
-            <ul>
-                <li>Démarrer la simulation avec des valeurs personnalisées ou de référence</li>
-                <li>Pause, sauvegarde et chargement de simulation</li>
-                <li>Modification des facteurs influents :
-                    <ul>
-                        <li>Amitié entre pays (niveau d’ouverture à l’échange international)</li>
-                        <li>Tensions entre les pays</li>
-                        <li>Probabilité d’événements</li>
-                    </ul>
-                </li>
-                <li>Changement de la vitesse de simulation (x1, x5, x10)</li>
+        <main>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="fonc">Fonctionnalités attendues</a>
+                        <a href="ment">Mentions Légales</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="container">
+                <h2 id="fonc">Fonctionnalités attendues</h2>
+                <ul>
+                    <li>Démarrer la simulation avec des valeurs personnalisées ou de référence</li>
+                    <li>Pause, sauvegarde et chargement de simulation</li>
+                    <li>Modification des facteurs influents :
+                        <ul>
+                            <li>Amitié entre pays (niveau d’ouverture à l’échange international)</li>
+                            <li>Tensions entre les pays</li>
+                            <li>Probabilité d’événements</li>
+                        </ul>
+                    </li>
+                    <li>Changement de la vitesse de simulation (x1, x5, x10)</li>
+                    <figure>
+                        <img src="./images/Map-511975108-612x612.jpg" alt="Relations entre les pays d'Europe" width="512"/>
+                        <figcaption>Relations entre les pays d'Europe</figcaption>
+                    </figure>
+                    <li>Interactions avec la simulation :
+                        <ul>
+                            <li>Créer des événements :
+                                <ul>
+                                    <li>Catastrophe naturelle (incendie, séisme, inondation)</li>
+                                    <li>Guerre</li>
+                                    <li>Influence sur les marchés internationaux</li>
+                                    <li>Changement de politique d’un pays</li>
+                                </ul>
+                            </li>
+                            <li>Mode passif : événements aléatoires, commerce, crises</li>
+                        </ul>
+                    </li>
+                    <li>Visualisation des données sous forme de graphiques interactifs :</li>
+                        <ul>
+                            <li>Indicateurs économiques : PIB, PNB, croissance, inflation, investissement</li>
+                            <li>Facteurs sociaux : emploi, pauvreté, tourisme, impôts, coût de la vie</li>
+                            <li>Industries : agriculture, commerce, services</li>
+                        </ul>
+                    <li>Carte interactive des pays :</li>
+                        <ul>
+                            <li>Affichage des relations commerciales (flèches en fonction du volume)</li>
+                            <li>Changement de couleur des pays en fonction des indicateurs</li>
+                        </ul>
+                    <li>Statistiques détaillées par année/mois</li>
+                    <li>Journal quotidien affichant les événements en cours/passés</li>
+                    <li>Affichage de la date de la simulation</li>
+                </ul>
                 <figure>
-                    <img src="./images/Map-511975108-612x612.jpg" alt="Relations entre les pays d'Europe" width="512"/>
-                    <figcaption>Relations entre les pays d'Europe</figcaption>
+                    <img src="./images/istockphoto-1280709569-612x612.jpg" alt="Symbole de l'euro brillant" width="512"/>
+                    <figcaption>Symbole de l'euro brillant</figcaption>
                 </figure>
-                <li>Interactions avec la simulation :
-                    <ul>
-                        <li>Créer des événements :
-                            <ul>
-                                <li>Catastrophe naturelle (incendie, séisme, inondation)</li>
-                                <li>Guerre</li>
-                                <li>Influence sur les marchés internationaux</li>
-                                <li>Changement de politique d’un pays</li>
-                            </ul>
-                        </li>
-                        <li>Mode passif : événements aléatoires, commerce, crises</li>
-                    </ul>
-                </li>
-                <li>Visualisation des données sous forme de graphiques interactifs :</li>
-                    <ul>
-                        <li>Indicateurs économiques : PIB, PNB, croissance, inflation, investissement</li>
-                        <li>Facteurs sociaux : emploi, pauvreté, tourisme, impôts, coût de la vie</li>
-                        <li>Industries : agriculture, commerce, services</li>
-                    </ul>
-                <li>Carte interactive des pays :</li>
-                    <ul>
-                        <li>Affichage des relations commerciales (flèches en fonction du volume)</li>
-                        <li>Changement de couleur des pays en fonction des indicateurs</li>
-                    </ul>
-                <li>Statistiques détaillées par année/mois</li>
-                <li>Journal quotidien affichant les événements en cours/passés</li>
-                <li>Affichage de la date de la simulation</li>
-            </ul>
-            <figure>
-                <img src="./images/istockphoto-1280709569-612x612.jpg" alt="Symbole de l'euro brillant" width="512"/>
-                <figcaption>Symbole de l'euro brillant</figcaption>
-            </figure>
-        </div>
+            </div>
+        </main>
         <footer>
             <div class="content">
                 <div class="authors">
@@ -97,19 +117,19 @@
                         <li>
                             Waneeza Hira <span class="nom">Awan</span>
                             <address>
-                                <a href="mailto:e-ybelkaci@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
+                                <a href="mailto:e-wawan@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
                             </address>
                         </li>
                         <li>
                             Waseel <span class="nom">Ayash</span>
                             <address>
-                                <a href="mailto:e-ybelkaci@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
+                                <a href="mailto:waseel.ayash@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
                             </address>
                         </li>
                     </ul>
                 </div>
                 <div class="legals">
-                    <h2>Mentions Légales</h2>
+                    <h2 id="ment">Mentions Légales</h2>
                     <ul>
                         <li>Mentions légales</li>
                         <li>CGU / CGV</li>
