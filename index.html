@@ -1,16 +1,19 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Waneeza, Yassine, Waseel">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Waneeza, Yassine, Waseel"/>
+    <meta name="description" content="">
     
     <title>GLP PROJET</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="./images/CY_logo.png" alt="logo de CY CERGY PARIS UNIVERSITE"/>
+        <a class="logo-link logo" href="./index.html">
+            <img class="" src="./images/CY_logo.png" alt="logo de CY CERGY PARIS UNIVERSITE"/>
+        </a>
         <h1>Projet GLP</h1>
     </header>
     
@@ -34,23 +37,26 @@
                 <li>
                     <a href="#intro">Introduction</a>
                 </li>
-                <ul>
-                    <li id="choix">choix</li>
-                    <li>Réal</li>
-                    <li>Interet</li>
-                </ul>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#choix">choix</a>
+                        </li>
+                        <li>Réal</li>
+                        <li>Interet</li>
+                    </ul>
+                </li>
             </ul>
         </aside>
 
         <section>
-            <h2 id="intro">Introduction</h2>        
+            <h2 id="intro">Introduction</h2>  
             <article>
                 <h3 id="choix">Choix</h3>
-                <span class="content">
+                <div class="content">
                     <p>Le projet que nous avons choisi porte sur l’économie, un sujet passionnant et d’une grande richesse. Plus précisément, notre objectif est de concevoir un logiciel innovant de simulation macro-économique, capable de représenter un continent. Nous avons choisi l’Europe, non pas uniquement comme Union européenne, mais en tant que continent au sens large, comprenant tous les pays qui le composent.</p>
                     <img class="logo" src="./images/Java_Logo.svg" alt="Logo de Java">
-                </figure>
-                </span>
+                </div>
             </article>
             <article>
                 <h3>Réalisation</h3>
@@ -73,24 +79,51 @@
 
 
     <footer>
-        <div class="authors">
-            <h2>Auteurs</h2>
-            <ul>
-                <li>Yassine <span class="nom">Belkacimi</span></li>
-                <li>Waneeza Hira <span class="nom">Awan</span></li>
-                <li>Waseel <span class="nom">Ayash</span></li>
-            </ul>
+        <div class="content">
+            <div class="authors">
+                <h2>Auteurs</h2>
+                <ul>
+                    <li>
+                        Yassine <span class="nom">Belkacimi</span>
+                        <address>
+                            <a href="mailto:e-ybelkaci@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
+                        </address>
+                    </li>
+                    <li>
+                        Waneeza Hira <span class="nom">Awan</span>
+                        <address>
+                            <a href="mailto:e-ybelkaci@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
+                        </address>
+                    </li>
+                    <li>
+                        Waseel <span class="nom">Ayash</span>
+                        <address>
+                            <a href="mailto:e-ybelkaci@etu.cyu.fr">e-ybelkaci@etu.cyu.fr</a>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+            <div class="legals">
+                <h2>Mentions Légales</h2>
+                <ul>
+                    <li>Mentions légales</li>
+                    <li>CGU / CGV</li>
+                    <li>TVA</li>
+                    <li>DGCRF</li>
+                </ul>
+            </div>
+            <div class="infos">
+                <h2>Infos</h2>
+                <ul>
+                    <li>Mis-à-jour le : <time datetime="2025-02-05">05/02/2025</time></li>
+                    <li>Vous lisez un article neutre en CO<sub>2</sub>. Félicitations !</li>
+                </ul>
+            </div>
+            <a class="logo logo-link" href="./index.html">
+                <img class="logo" src="./images/CY.png" alt="Logo de CY" />
+            </a>
         </div>
-        <div class="legals">
-            <h2>Mentions Légales</h2>
-            <ul>
-                <li>Mentions légales</li>
-                <li>CGU / CGV</li>
-                <li>TVA</li>
-                <li>DGCRF</li>
-            </ul>
-        </div>
-        <img class="logo" src="./images/CY.png" alt="Logo de CY"/>
+        <small class="copyright">Copyright ©️ 2025 Les auteurs ci-dessus</small>
     </footer>
 </body>
 </html>

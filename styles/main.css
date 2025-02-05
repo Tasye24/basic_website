@@ -15,7 +15,7 @@ header {
     align-items: center;
 }
 
-header > .logo {
+header > .logo img {
     height: 120px;
 }
 header > h1 {
@@ -23,8 +23,15 @@ header > h1 {
     color: rgb(32, 32, 32);
 }
 
-
 footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(127, 124, 250);
+    align-items: stretch;
+    position: relative;
+    bottom: 0;
+}
+footer .content {
     background: rgb(127, 124, 250);
     display: flex;
     flex-direction: row;
@@ -33,18 +40,26 @@ footer {
     position: relative;
     bottom: 0;
 }
-footer > * {
+footer > .copyright {
+    font-weight: 100;
+    color: white;
+    align-self: center;
+}
+footer .content > * {
     padding: .75em;
     border-radius: 1.8em;
 }
-footer > .authors {
+footer .authors {
     background: rgba(0, 0, 255, 0.185);
 }
-footer > .authors .nom {
+footer .authors .nom {
     font-weight: bold;
 }
-footer > .legals {
+footer .legals {
     background: rgba(255, 30, 0, 0.445);
+}
+footer .infos {
+    background: rgb(47, 43, 238);
 }
 footer h2 {
     color: white;
@@ -74,6 +89,9 @@ footer li:hover {
     background: none;
     color: white;
 }
+footer li:hover a {
+    color: white;
+}
 footer li:hover .nom {
     font-size: 1.25em;
 }
@@ -97,7 +115,7 @@ article > figure {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    
+
 }
 
 main {
@@ -108,6 +126,7 @@ main > aside {
     position: sticky;
     top: 10px;
     height: 100%;
+    min-width: 150px;
 }
 main > aside ul {
     display: block;
@@ -122,14 +141,16 @@ main > section {
     padding: 1.5em;
 }
 
-footer > .logo {
+footer .logo {
     height: 64px;
     background: none;
     border-radius: 3em;
 }
 
-body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
-.container { width: 80%; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+.container { 
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+}
 
 .container > ul li {
     
@@ -149,8 +170,9 @@ nav > ul {
 }
 nav > ul a:hover {
     text-decoration: underline;
+    color: white;
 }
-a:before {
+a:not(.logo-link):before {
     content: "🔗 ";
 }
 nav a { 
