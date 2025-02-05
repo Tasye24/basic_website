@@ -97,6 +97,7 @@ article > figure {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    
 }
 
 main {
