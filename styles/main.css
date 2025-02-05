@@ -40,6 +40,9 @@ footer > * {
 footer > .authors {
     background: rgba(0, 0, 255, 0.185);
 }
+footer > .authors .nom {
+    font-weight: bold;
+}
 footer > .legals {
     background: rgba(255, 30, 0, 0.445);
 }
@@ -70,6 +73,19 @@ footer li:hover {
     padding: 2em;
     background: none;
     color: white;
+}
+
+article .content {
+    display: flex;
+    flex-direction: row;
+}
+article .logo {
+    height: 10em;
+    margin: 1em;
+}
+
+article {
+    border-top: .2em solid rgba(0, 0, 0, 0.555);
 }
 
 footer > .logo {
