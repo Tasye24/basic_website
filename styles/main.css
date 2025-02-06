@@ -142,9 +142,15 @@ main > aside ul {
     margin-inline-end: 0px;
     padding-inline-start: 10px;
 }
+main > aside li a {
+    text-transform: capitalize;
+}
+main > aside li {
+    margin-bottom: .5em;
+}
 main > section {
     padding: 1.5em;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 main img {
